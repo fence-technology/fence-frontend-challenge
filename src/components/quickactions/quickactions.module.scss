@@ -1,0 +1,46 @@
+@use 'src/design-system/text';
+
+.quick_actions {
+  display: flex;
+  width: 495px;
+  height: 102px;
+  padding: 16px;
+  gap: 0px;
+  border-radius: 8px;
+  border: solid 1px #00a2ff;
+  background-color: #00a2ff14;
+  justify-content: space-between;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    gap: 16px;
+    flex-grow: 1;
+
+    &__text {
+      display: flex;
+      gap: 8px;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: center;
+
+      &__title {
+        @extend .text;
+        color: #00a2ff;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      &__description {
+        @extend .text;
+        color: #00a2ff;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+
+  &__btn {
+    width: 100%;
+  }
+}

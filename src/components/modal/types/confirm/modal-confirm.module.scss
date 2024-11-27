@@ -1,0 +1,58 @@
+@use 'src/design-system/text';
+
+.modal_error {
+  &__btn__blue {
+    @extend .text;
+    display: flex;
+    height: 48px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: #c63304;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__btn__white {
+    @extend .text;
+    display: flex;
+    height: 48px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 4px;
+    border: 1px solid #00a2ff;
+    color: #00a2ff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__header {
+    &__description {
+      @extend .text;
+      color: #101f35;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 39.969px;
+      align-self: stretch;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@use '/src/design-system/colors.scss' as colors;
+
+@keyframes background-animation {
+  0% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: -100%;
+  }
+}
+
+.loader_line {
+  animation: background-animation infinite linear;
+  animation-duration: 1.5s;
+  animation-delay: 0;
+  background-image: linear-gradient(
+    90deg,
+    #e3eaf6 0%,
+    #f6f8fc 40%,
+    #e3eaf6 80%
+  );
+  background-size: 200%;
+}

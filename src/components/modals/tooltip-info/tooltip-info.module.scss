@@ -1,0 +1,11 @@
+@use '/src/design-system/colors.scss' as colors;
+@use 'src/design-system/text';
+
+.tooltip_info__text {
+  @extend .text__ps;
+  padding: 8px;
+}
+
+.tooltip_info__icon {
+  width: 16px;
+}

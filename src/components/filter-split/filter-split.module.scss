@@ -1,0 +1,109 @@
+@use 'src/design-system/text';
+@use 'src/design-system/colors' as colors;
+
+.filterContainer {
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  flex-grow: 1;
+  height: min-content;
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 24px 19px 24px;
+  gap: 10px;
+  cursor: pointer;
+
+  button {
+    width: auto;
+    text-align: -webkit-left;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    h2 {
+      @extend .text__m;
+      margin: 0;
+      color: #101828;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+    }
+  }
+}
+
+.arrow {
+  border: solid #999;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transition: transform 0.3s ease;
+
+  &.down {
+    transform: rotate(45deg);
+  }
+
+  &.up {
+    transform: rotate(-135deg);
+  }
+}
+
+.filterContent {
+  padding: 15px 20px;
+  background-color: #eff9ff;
+
+  &__subtitle {
+    @extend .text;
+    color: #101f35;
+    line-height: 16px;
+  }
+
+  &__badge {
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+.badge {
+  @extend .text__ps;
+  box-shadow: 0px 0.826px 1.653px 0px rgba(16, 24, 40, 0.05);
+  line-height: 16.528px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__selected {
+    border: 0.826px solid #00a2ff;
+    color: #ffffff;
+    background: #00a2ff;
+  }
+
+  &__no_selected {
+    background: #f9fafb;
+    color: #101f35;
+    border: 0.826px solid #d0d5dd;
+  }
+}
+
+.clearButton {
+  @extend .text__ps;
+  background: none;
+  border: none;
+  color: #00a2ff;
+  cursor: pointer;
+  padding: 0;
+  font-weight: 600;
+  text-decoration-line: underline;
+}

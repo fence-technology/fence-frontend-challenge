@@ -1,0 +1,76 @@
+@use 'src/design-system/text';
+
+.thead__thead {
+  display: table-header-group;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+  white-space: nowrap;
+}
+
+.thead__titleRow {
+  background-color: #fff;
+}
+
+.thead__title {
+  padding: 16px;
+  text-align: left;
+  font-weight: bold;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.thead__titleContainer {
+  @extend .text__m;
+  font-size: 18px;
+  font-weight: 700;
+  color: #101f35;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thead__actionButton {
+  margin-left: auto;
+}
+
+.thead__th {
+  padding: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.thead__th_small {
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.thead__th__content {
+  align-items: center;
+  gap: 8px;
+}
+
+.thead__order {
+  cursor: pointer;
+}
+
+.start {
+  & > div:first-child {
+    justify-content: flex-start;
+    display: flex;
+  }
+}
+
+.center {
+  & > div:first-child {
+    justify-content: center;
+    display: flex;
+  }
+}
+.flex-end {
+  & > div:first-child {
+    justify-content: flex-end;
+    display: flex;
+  }
+}

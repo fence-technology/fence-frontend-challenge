@@ -1,0 +1,47 @@
+@use 'src/design-system/text';
+
+.card {
+  display: flex;
+  width: fit-content;
+  padding: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: var(--Corner-8, 8px);
+  background: var(--Color-Secondary, #eff9ff);
+
+  &__icon {
+    display: flex;
+    width: 35px;
+    height: 36px;
+    padding: 6px 5px 6px 6px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6.128px;
+    background: #fff;
+  }
+
+  &__text {
+    @extend .text;
+    display: flex;
+    width: 101px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    color: var(--Color-Typo_Black, #101f35);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+
+    &__value {
+    }
+
+    &__title {
+      color: var(--Color-Typo_Black, #101f35);
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}

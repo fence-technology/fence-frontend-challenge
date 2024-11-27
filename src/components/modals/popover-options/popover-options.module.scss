@@ -1,0 +1,28 @@
+@use '/src/design-system/colors.scss' as colors;
+@use 'src/design-system/text';
+
+.popover_options {
+  width: 240px;
+  overflow: hidden;
+}
+
+.popover_options__option {
+  @extend .text;
+  padding: 16px 8px;
+  border-bottom: 1px solid colors.$black-20;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+
+  &:hover {
+    background-color: colors.$black-10;
+    border-radius: 8px 8px 0 0;
+  }
+
+  &:last-child {
+    border: none;
+
+    &:hover {
+      border-radius: 0 0 8px 8px;
+    }
+  }
+}

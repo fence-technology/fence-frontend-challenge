@@ -1,0 +1,43 @@
+@use 'src/design-system/text';
+
+.table_pagination__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.table_pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.table_pagination__arrow {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.table_pagination__dots {
+  &::after {
+    content: '...';
+    padding: 5px;
+  }
+}
+
+.table_pagination__page {
+  @extend .text__xs;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.table_pagination__page_selected {
+  @extend .text__xs;
+  font-weight: 700;
+}

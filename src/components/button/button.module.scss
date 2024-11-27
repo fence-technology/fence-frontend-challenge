@@ -1,0 +1,165 @@
+@use 'src/design-system/colors' as colors;
+@use 'src/design-system/text';
+
+.button {
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+  border-radius: 4px;
+  background: #00a2ff;
+  color: #ffffff;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.defaultPrimary {
+  background-color: colors.$blue-50;
+  color: white;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+.defaultSecondary {
+  background-color: transparent;
+  border: 1px solid colors.$blue-50;
+  color: colors.$blue-50;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+.defaultDark {
+  background-color: transparent;
+  border: 1px solid #d0d5dd;
+  color: colors.$black-80;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+.defaultLink {
+  background-color: transparent;
+  color: colors.$blue-50;
+  .title {
+    text-decoration: underline;
+  }
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+.disabledPrimary {
+  background-color: colors.$grey-100;
+  color: colors.$grey-200;
+  &:hover {
+    cursor: default;
+  }
+}
+
+.disabledSecondary {
+  background-color: transparent;
+  border: 1px solid colors.$grey-200;
+  color: colors.$grey-200;
+}
+
+.disabledLink {
+  background-color: transparent;
+  color: colors.$grey-200;
+  .title {
+    text-decoration: underline;
+  }
+}
+
+.errorPrimary {
+  background-color: colors.$bg-error;
+  color: white;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+.errorSecondary {
+  background-color: transparent;
+  border: 1px solid colors.$bg-error;
+  color: colors.$bg-error;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+.errorLink {
+  background-color: transparent;
+  color: colors.$bg-error;
+  .title {
+    text-decoration: underline;
+  }
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+.iconPrimary {
+  background-color: colors.$blue-50;
+  color: white;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+.iconSecondary {
+  background-color: transparent;
+  border: 1px solid colors.$blue-50;
+  color: colors.$blue-50;
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+.iconLink {
+  background-color: transparent;
+  color: colors.$blue-50;
+  .title {
+    text-decoration: underline;
+  }
+  &:hover {
+    opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+  }
+}
+
+.title {
+  text-align: center;
+  @extend .text;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.iconLeft,
+.iconRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.fullWidth {
+  width: 100%;
+}

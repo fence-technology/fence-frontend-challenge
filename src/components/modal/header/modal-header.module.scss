@@ -1,0 +1,18 @@
+@use 'src/design-system/colors' as colors;
+@use 'src/design-system/text';
+
+.modal_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26.646px;
+  align-self: stretch;
+
+  @extend .text;
+  color: #101f35;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39.969px;
+}

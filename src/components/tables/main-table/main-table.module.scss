@@ -1,0 +1,63 @@
+@use '/src/design-system/colors.scss' as colors;
+@use 'src/design-system/text';
+
+.main_table__container {
+  overflow: hidden;
+}
+
+.main_table__wrapper {
+  height: 100%;
+  position: relative;
+  overflow: auto;
+  display: flex;
+  justify-content: safe center;
+  align-items: flex-start;
+
+  flex-direction: column;
+  align-items: safe center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.main_table {
+  min-width: 100%;
+}
+
+.main_table__tbody {
+  border-collapse: collapse;
+}
+
+.main_table__td {
+  @extend .text;
+  border-collapse: collapse;
+  padding: 16px 8px;
+  border-bottom: 1px solid colors.$black-20;
+  color: colors.$black-80;
+  white-space: nowrap;
+}
+
+.main_table__td_small {
+  @extend .main_table__td;
+  padding: 8px;
+}
+
+.main_table__td__actions {
+  @extend .main_table__td;
+  width: 0;
+}
+
+.main_table__no_results {
+  padding: 32px;
+  width: 100%;
+  max-width: 343px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.main_table__no_results__text {
+  @extend .text__m;
+  color: colors.$black-30;
+}

@@ -1,0 +1,107 @@
+@use 'src/design-system/colors' as colors;
+@use 'src/design-system/text';
+@use 'src/components/form/field.module.scss';
+
+.input_calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  &__separator {
+    @extend .text;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    width: 10px !important;
+  }
+}
+
+.input_calendar__wrapper {
+  @extend .field__box;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 4px;
+  height: 100%;
+  width: 100%;
+
+  &__container_dates {
+    display: flex;
+    gap: 10px;
+
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.input_calendar__input {
+  &__icon {
+    height: 20px;
+    position: relative !important;
+    padding: 0.5rem 0 0.5rem 0.8rem !important;
+  }
+
+  &__left {
+    &__no_value {
+      text-align: end;
+      width: auto;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      max-width: 98px;
+    }
+
+    &__value {
+      text-align: end;
+      width: auto;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      max-width: 70px;
+    }
+  }
+
+  &__right {
+    &__no_value {
+      width: auto;
+      padding: 6px 10px 5px 0px;
+      max-width: 98px;
+    }
+    &__value {
+      width: auto;
+      padding: 6px 10px 5px 0px;
+      max-width: 70px;
+    }
+  }
+
+  &__wrapper {
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+    input {
+      @extend .text;
+      color: #101f35;
+      font-style: normal;
+      line-height: 17px;
+    }
+  }
+}
+
+.input_calendar__helpers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input_calendar__helper {
+  color: var(--Color-Background-Disabled-Grey_300, #8c9296);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input_calendar__error {
+  @extend .field__error;
+}

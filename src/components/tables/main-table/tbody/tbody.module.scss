@@ -1,0 +1,37 @@
+@use '/src/design-system/colors.scss' as colors;
+@use 'src/design-system/text';
+
+.tbody__tbody {
+  border-collapse: collapse;
+}
+
+.tbody__td {
+  @extend .text;
+  font-size: clamp(10px, 1vw, 16px);
+  border-collapse: collapse;
+  padding: 16px 8px;
+  border-bottom: 1px solid colors.$black-20;
+  color: colors.$black-80;
+  max-width: 320px;
+  vertical-align: middle;
+}
+
+.tbody__td__content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.tbody__td_small {
+  @extend .tbody__td;
+  padding: 8px;
+}
+
+.tbody__td__actions {
+  @extend .tbody__td;
+  width: 0;
+  vertical-align: middle;
+}

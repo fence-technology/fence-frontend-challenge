@@ -1,0 +1,18 @@
+@use 'src/design-system/colors' as colors;
+@use 'src/design-system/text';
+@use 'src/components/form/field.module.scss';
+
+.wrap {
+  border: 1px solid rgba(70, 190, 241, 0.6);
+  border-radius: 8px;
+  padding: 0px 12px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  gap: 8px;
+}
+.input {
+  font-size: 14px;
+  color: #9c9aa5;
+  width: calc(100% - 24px);
+}

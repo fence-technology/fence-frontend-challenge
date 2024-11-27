@@ -1,0 +1,55 @@
+@use 'src/design-system/colors.scss' as colors;
+
+.container {
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  padding: 8px;
+  border-radius: 31px;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.528px;
+  color: var(--Color-Typo_Black, #364254);
+}
+
+.content {
+  margin-right: 8px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap;
+}
+
+.deleteIcon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.info {
+  // font-weight: 500;
+  background-color: colors.$blue-20;
+  // color: colors.$blue-50;
+}
+
+.success {
+  // font-weight: 500;
+  background-color: colors.$green-30;
+  // color: colors.$green-50;
+}
+
+.warning {
+  // font-weight: 500;
+  background-color: colors.$yellow-30;
+  // color: colors.$yellow-50;
+}
+
+.error {
+  // font-weight: 500;
+  background-color: colors.$red-20;
+  // color: colors.$red-50;
+}

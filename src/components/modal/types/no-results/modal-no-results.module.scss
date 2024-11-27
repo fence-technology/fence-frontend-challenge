@@ -1,0 +1,45 @@
+@use 'src/design-system/text';
+
+.modal_no_results {
+  &__btn__blue {
+    @extend .text;
+    display: flex;
+    height: 48px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 4px;
+    background: #00a2ff;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__header {
+    &__title {
+      @extend .text;
+      color: #101f35;
+      text-align: center;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 39.969px;
+      align-self: stretch;
+    }
+
+    &__description {
+      @extend .text;
+      color: #101f35;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 39.969px;
+      align-self: stretch;
+    }
+  }
+}

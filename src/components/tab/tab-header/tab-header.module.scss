@@ -1,0 +1,72 @@
+@use 'src/design-system/text';
+
+.tabContainer {
+  width: 100%;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.tabHeader {
+  display: inline-flex;
+  padding: 8px;
+  border-radius: 29px;
+  background: #fff;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  gap: 30px;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tabButton {
+  @extend .text_medium;
+  width: 198px;
+  height: 42px;
+  padding: 8px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: center;
+  color: #00a2ff;
+  background-color: transparent;
+  border: none;
+  border-radius: 21px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  white-space: nowrap;
+
+  &:hover {
+    color: #111827;
+  }
+
+  &.active {
+    color: #ffffff;
+    background-color: #00a2ff;
+    font-weight: 600;
+  }
+}
+
+.tabContent {
+  margin-top: 1rem;
+}
+
+.activeContent {
+  display: block;
+}
+
+.inactiveContent {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .tabHeader {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .tabButton {
+    flex: 0 0 auto;
+  }
+}

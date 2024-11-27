@@ -1,0 +1,21 @@
+.icon_left {
+  width: 16px;
+  height: 16px;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+.icon_right {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.wrap {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14286;
+  color: #003655;
+}

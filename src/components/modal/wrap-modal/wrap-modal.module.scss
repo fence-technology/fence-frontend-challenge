@@ -1,0 +1,37 @@
+.rgba {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+}
+.wrap_content {
+  border-radius: 12px;
+  padding: 32px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+.close_icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #353535;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}

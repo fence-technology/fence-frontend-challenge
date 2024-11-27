@@ -1,0 +1,29 @@
+.modal {
+  display: flex;
+  width: 575px;
+  padding: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  border-radius: 20px;
+  box-shadow: 0px 13.323px 39.969px 0px rgba(170, 170, 170, 0.12);
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  &__scroll {
+    overflow: auto;
+  }
+}
+
+.line {
+  height: 1px;
+  min-height: 1px;
+  background-color: #e0e0e0;
+  align-self: stretch;
+}
